@@ -7,14 +7,25 @@ const FeesAndRates = () => {
 
   return (
     <Container>
-      <div className='py-8 pt-24'>
+      <div className='py-8 pt-20 md:pt-24'>
         <div className='w-full text-white'>
-          <Heading
-            title='FEES AND RATES'
-            src='/assets/bulk-trade.png'
-            alt='fees and rates'
-          ></Heading>
-          <div className='sm:rounded-none'>
+          <div className='hidden md:block'>
+            <Heading
+              title='FEES AND RATES'
+              src='/assets/bulk-trade.png'
+              alt='fees and rates'
+            ></Heading>
+          </div>
+          <div className='block md:hidden'>
+            <Heading
+              title='FEES AND RATES'
+              src='/assets/bulk-trade.png'
+              alt='fees and rates'
+              imageWidth={50}
+              imageHeight={50}
+            ></Heading>
+          </div>
+          <div className='sm:rounded-none w-full'>
             {/* <div className='hidden md:block pb-10'>
             <Heading
             title={t?.feesAndRates.header}
@@ -31,129 +42,130 @@ const FeesAndRates = () => {
             imageHeight={50}
             />
             </div> */}
-            <table className='bg-[#212741] text-black w-[60%] mx-auto mb-6'>
-              <caption className='caption-top px-6 py-4 mt-5 mx-auto text-center text-sm text-muted-foreground'>
+            <table className='text-black w-[100%] md:w-[60%] mx-auto mb-6'>
+              <caption className='caption-top py-4 mt-5 text-center text-xs md:text-sm text-muted-foreground'>
                 This table outlines the various fees associated with different
                 cryptocurrency transactions. It provides a clear overview of the
                 costs involved in buying, selling, and withdrawing
                 cryptocurrencies, ensuring transparency for our users.
               </caption>
-
-              <tr className='bg-[#212741] py-4 hidden md:table-row'>
-                <th
-                  scope='col'
-                  className='px-6 py-4 text-left text-sm text-muted-foreground whitespace-nowrap'
-                >
-                  Coin/Token
-                </th>
-                {/* <th
+              <thead className='bg-night-50 text-white'>
+                <tr className=''>
+                  <th
+                    scope='col'
+                    className='px-2 py-4 text-left text-xs md:text-sm text-muted-foreground'
+                  >
+                    Coin/Token
+                  </th>
+                  {/* <th
                 scope='col'
-                className='px-6 py-4 text-left text-sm text-muted-foreground whitespace-nowrap'
+                className='px-6 py-4 text-left text-xs md:text-sm text-muted-foreground'
                 >
                 Full Name
                 </th> */}
-                <th
-                  scope='col'
-                  className='px-6 py-4 text-left text-sm text-muted-foreground whitespace-nowrap capitalize'
-                >
-                  Transaction Type
-                </th>
-                <th
-                  scope='col'
-                  className='px-6 py-4 text-left text-sm text-muted-foreground whitespace-nowrap capitalize'
-                >
-                  Fees
-                </th>
-              </tr>
+                  <th
+                    scope='col'
+                    className='px-2 py-4 text-left text-xs md:text-sm text-muted-foreground capitalize'
+                  >
+                    Transaction Type
+                  </th>
+                  <th
+                    scope='col'
+                    className='px-2 py-4 text-right text-xs md:text-sm text-muted-foreground capitalize'
+                  >
+                    Fees
+                  </th>
+                </tr>
+              </thead>
               <tbody>
-                <tr className='border-b border-[#212741] hover:bg-[#6e7794]'>
-                  <td className='px-6 py-4 capitalize whitespace-nowrap text-sm text-white font-medium hidden md:table-cell'>
+                <tr className='border-b border-[#212741]'>
+                  <td className='px-6 py-4 capitalize text-xs md:text-sm text-white'>
                     Cryptos
                   </td>
                   <td
                     data-cell='Transaction Type'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     Buying
                   </td>
                   <td
                     data-cell='Fees'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='capitalize px-2 py-4 text-right text-xs md:text-sm text-white justify-between'
                   >
                     2%
                   </td>
                 </tr>
-                <tr className='border-b border-[#212741] hover:bg-[#6e7794]'>
-                  <td className='px-6 py-4 capitalize whitespace-nowrap text-sm text-white font-medium hidden md:table-cell'></td>
+                <tr className='border-b border-[#212741]'>
+                  <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
                   <td
                     data-cell='Transaction Type'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     Selling
                   </td>
                   <td
                     data-cell='Fees'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     2%
                   </td>
                 </tr>
-                <tr className='border-b border-[#212741] hover:bg-[#6e7794]'>
-                  <td className='px-6 py-4 capitalize whitespace-nowrap text-sm text-white font-medium hidden md:table-cell'></td>
+                <tr className='border-b border-[#212741]'>
+                  <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
                   <td
                     data-cell='Transaction Type'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     Withdrawal (Internal) - BTC
                   </td>
                   <td
                     data-cell='Fees'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     $2.00
                   </td>
                 </tr>
-                <tr className='border-b border-[#212741] hover:bg-[#6e7794]'>
-                  <td className='px-6 py-4 capitalize whitespace-nowrap text-sm text-white font-medium hidden md:table-cell'></td>
+                <tr className='border-b border-[#212741]'>
+                  <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
                   <td
                     data-cell='Transaction Type'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     Withdrawal (External)
                   </td>
                   <td
                     data-cell='Fees'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     Network Fees + $5.00
                   </td>
                 </tr>
-                <tr className='border-b border-[#212741] hover:bg-[#6e7794]'>
-                  <td className='px-6 py-4 capitalize whitespace-nowrap text-sm text-white font-medium hidden md:table-cell'></td>
+                <tr className='border-b border-[#212741]'>
+                  <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
                   <td
                     data-cell='Transaction Type'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     Convert
                   </td>
                   <td
                     data-cell='Fees'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     5%
                   </td>
                 </tr>
-                <tr className='border-b border-[#212741] hover:bg-[#6e7794] first:bg-gray-100'>
-                  <td className='px-6 py-4 capitalize whitespace-nowrap text-sm text-white font-medium hidden md:table-cell'></td>
+                <tr className='border-b border-[#212741] first:bg-gray-100'>
+                  <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
                   <td
                     data-cell='Transaction Type'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     Withdrawal (External) - USDT
                   </td>
                   <td
                     data-cell='Fees'
-                    className='text-left capitalize px-6 py-4 whitespace-nowrap text-sm text-white before:content-[attr(data-cell)] md:before:content-none flex justify-between md:table-cell'
+                    className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
                     Network Fees + $2.00
                   </td>
@@ -186,7 +198,7 @@ const FeesAndRates = () => {
             <tbody className='bg-[#1D1D31] divide-y divide-gray-200'>
             {t?.feesAndRates.info.map((data: any, index: number) => (
               <tr key={index}>
-              <td className='px-6 py-4 whitespace-nowrap text-sm font-medium flex gap-2 items-center'>
+              <td className='px-6 py-4 text-sm font-medium flex gap-2 items-center'>
               {data?.name}
               </td>
               <td className='px-6 py-4 whitespace-nowrap text-sm'>

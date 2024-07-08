@@ -1,31 +1,58 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
-import ussdflyerone from '../../../../public/assets/ussd-flyer-one.webp';
-import ussdflyertwo from '../../../../public/assets/ussd-flyer-two.webp';
-
-const CTA = () => {
+const CTA = ({ banners }: any) => {
   return (
-    <div className='text-white'>
-      <div className='w-full px-4 md:container lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto flex flex-col items-center py-8 pt-6 sm:px-0'>
-        <div className='md:flex justify-center gap-2 md:gap-8 pt-14 pb-8 space-y-4 md:space-y-0'>
-          <div>
+    <div className='text-white py-10'>
+      <div className='hidden w-full md:grid grid-cols-3 items-center py-8 pt-6 gap-4'>
+        {banners.map((item: string, index: number) => (
+          <div key={index} className='rounded-md'>
             <Image
-              src={ussdflyerone}
-              alt='mybitstore-flyer'
+              src={item}
+              alt={`mybitstore-flyer-${index}`}
               width={600}
               height={200}
+              className='rounded-md'
             />
           </div>
-          <div>
-            <Image
-              src={ussdflyertwo}
-              alt='mybitstore-flyer'
-              width={600}
-              height={200}
-            />
-          </div>
-        </div>
+        ))}
+      </div>
+      <div className='w-full flex justify-center items-center md:hidden'>
+        <Carousel
+          opts={{
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 5000,
+            }),
+          ]}
+          className='w-full max-w-xs'
+        >
+          <CarouselContent>
+            {banners.map((banner: string, index: number) => (
+              <CarouselItem key={index}>
+                <Image
+                  src={banner}
+                  alt={`mybitstore-flyer-${index}`}
+                  width={600}
+                  height={200}
+                  className='rounded-md'
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          {/* <CarouselPrevious /> */}
+          {/* <CarouselNext /> */}
+        </Carousel>
       </div>
     </div>
   );

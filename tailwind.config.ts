@@ -19,7 +19,8 @@ const config = {
     },
     extend: {
       gridTemplateColumns: {
-        featureGrid: 'repeat(auto-fit, minmax(350px, 1fr))',
+        featureGridMD: 'repeat(auto-fit, minmax(350px, 1fr))',
+        featureGridXS: 'repeat(auto-fit, minmax(250px, 1fr))',
       },
       colors: {
         night: {

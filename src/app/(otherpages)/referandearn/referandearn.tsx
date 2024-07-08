@@ -26,23 +26,23 @@ const Affiliate = () => {
         <div className='grid md:grid-cols-2 justify-center gap-8 items-start md:py-12 pb-12'>
           <div className='flex max-w-lg flex-col items-start gap-10'>
             <div className='flex flex-col'>
-              <span className='text-3xl text-center md:text-left md:text-3xl font-medium mb-3'>
+              <span className='text-2xl md:text-left md:text-3xl font-medium mb-3'>
                 Start Earning With Mybitstore Referals
               </span>
-              <p className='text-base text-center md:text-left text-white sm:text-sm md:text-base'>
+              <p className='text-base md:text-left text-white sm:text-sm md:text-base'>
                 Share Mybitstore to friends and family and earn commissions on
                 their trades.
               </p>
             </div>
             <Button
-              variant={'link'}
-              className='bg-[#2584fc] hover:bg-[#2584fc] py-8 px-8'
+              variant={'default'}
+              className='bg-[#2584fc] w-full mx-auto rounded-sm hover:bg-[#2584fc] md:py-8 md:px-8'
             >
               <Link
-                className='block mx-auto md:ms-0 rounded text-white font-semibold'
-                href='/affiliate_signup'
+                className='md:ms-0 text-white md:text-lg font-semibold'
+                href='https://app.mybitstore.com/auth'
               >
-                Log in to refer a friend now
+                Get Referral Code
               </Link>
             </Button>
           </div>

@@ -10,10 +10,10 @@ const TrackingTextUI = () => {
     const typed = new Typed(el.current, {
       strings: ['trade crypto', 'convert crypto', 'trade with your peers'], // Strings to display
 
-      startDelay: 1000,
-      typeSpeed: 10,
-      backSpeed: 10,
-      backDelay: 1000,
+      startDelay: 500,
+      typeSpeed: 30,
+      backSpeed: 30,
+      backDelay: 3000,
       loop: true,
     });
 
@@ -23,7 +23,7 @@ const TrackingTextUI = () => {
     };
   }, []);
   return (
-    <h1 className='text-white text-3xl tracking-tight  lg:text-left font-medium justify-center text-center md:text-5xl mb-0 grid'>
+    <h1 className='text-white text-3xl tracking-tight lg:text-left font-medium justify-center text-center md:text-5xl mb-0 grid'>
       A better way to
       <span>
         <span ref={el}></span>

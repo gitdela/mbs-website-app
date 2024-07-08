@@ -51,30 +51,28 @@ const FeatureGrid = () => {
     },
   ];
   return (
-    <div className='py-12 md:py-12 md:pb-20'>
-      <div className='container w-full md:container lg:max-w-5xl xl:max-w-6xl  2xl:max-w-7xl mx-auto px-4 text-center sm:px-6 lg:px-8'>
-        <h3 className='max-w-2xl mx-auto py-14 text-center text-white font-bold text-2xl tracking-tight md:text-4xl'>
-          Why you should choose Mybitstore for cryptocurrency trading.
+    <div className='pb-12 md:py-12 md:pb-20'>
+      <div className='w-full px-4 text-center sm:px-6 lg:px-8'>
+        <h3 className='py-14 text-center text-white font-bold text-lg tracking-tight md:text-4xl'>
+          Why you should choose Mybitstore for cryptocurrency trading
         </h3>
-        <div className='grid grid-cols-featureGrid gap-8'>
+        <div className='grid grid-cols-featureGridXS md:grid-cols-featureGridMD gap-8'>
           {data.map(({ Icon, title, desc, link }, index) => (
             <div className='py-6 px-2 bg-night-50 rounded' key={index}>
               <div className='flex flex-col items-start px-4'>
-                <span className='bg-[#53BA9B] rounded-full p-2 text-white'>
-                  <Link className='text-white' href={link}>
-                    <Image
-                      src={Icon}
-                      alt='logo'
-                      height={30}
-                      width={30}
-                      className='w-5 h-5'
-                    />
-                  </Link>
-                </span>
-                <h3 className='py-4 mb-0 text-lg text-white font-medium tracking-tight'>
-                  {title}
-                </h3>
-                <p className='text-base text-start text-muted-foreground mb-0'>
+                <div className='flex items-center juscetify-start gap-2'>
+                  <Image
+                    src={Icon}
+                    alt='logo'
+                    height={20}
+                    width={20}
+                    className='bg-[#53BA9B] rounded-full p-0.5 text-white w-8 h-8'
+                  />
+                  <h3 className='py-4 mb-0 text-base md:text-lg text-white text-left font-medium'>
+                    {title}
+                  </h3>
+                </div>
+                <p className='text-sm md:text-base text-start text-muted-foreground mb-0'>
                   {desc}
                 </p>
               </div>

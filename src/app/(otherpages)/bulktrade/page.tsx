@@ -63,7 +63,6 @@ const OtcBulk = () => {
         ..._.omit(data, ['firstName', 'lastName']),
       })
       .then((res) => {
-        console.log(res);
         notification.success({
           message: 'Message received',
           description: 'We will get back to you soon. Thank you',

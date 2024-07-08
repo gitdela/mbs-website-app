@@ -66,7 +66,6 @@ const Support = () => {
   //       ..._.omit(data, ['firstName', 'lastName']),
   //     })
   //     .then((res) => {
-  //       console.log(res.data);
   //       notification.success({
   //         message: 'Message received',
   //         description: res.data.info,

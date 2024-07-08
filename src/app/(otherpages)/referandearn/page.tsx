@@ -26,12 +26,12 @@ const ReferAndEarn = () => {
           className='w-full md:h-[300px] object-cover'
         />
         <div className='absolute flex flex-col gap-3 md:gap-8 items-center justify-center inset-0 left-1/2 transform -translate-x-1/2'>
-          <h1 className='text-white text-center font-bold text-base md:text-2xl'>
+          <h1 className='text-white text-center font-bold md:text-base lg:text-2xl'>
             LOGIN TO CHECK YOUR EARNINGS
           </h1>
           <Button
             variant={'default'}
-            className='text-white w-36 md:w-48 py-4 md:py-7 font-semibold  bg-[#2584fc] hover:bg-[#2584fc] hover:text-white'
+            className='text-white w-36 md:w-48 py-4 md:py-7 font-semibold rounded-sm  bg-[#2584fc] hover:bg-[#2584fc] hover:text-white'
           >
             <Link
               className='text-white hover:text-white flex gap-2 items-center justify-center'

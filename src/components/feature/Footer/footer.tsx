@@ -17,12 +17,12 @@ const Footer = () => {
           <div className='xl:grid xl:grid-cols-3 xl:gap-8'>
             <div className='space-y-8 xl:col-span-1 '>
               <Image
-                className='flex justify-center items-center'
                 priority
                 src={mybitstorelogo}
                 alt='logo'
                 height={40}
                 width={170}
+                className='flex justify-center items-center w-36 md:w-36'
               />
 
               <div className='flex items-center md:justify-start space-x-6'>
@@ -98,6 +98,7 @@ const Footer = () => {
                     src={getitongoogleplay}
                     alt='android'
                     priority
+                    className='w-24 md:w-36'
                   />
                 </Link>
                 <Link
@@ -112,6 +113,7 @@ const Footer = () => {
                     src={downloadontheappstore}
                     alt='ios'
                     priority
+                    className='w-24 md:w-36'
                   />
                 </Link>
               </div>

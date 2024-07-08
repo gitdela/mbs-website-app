@@ -40,7 +40,13 @@ const HomeNavbar = () => {
 
           <div className='flex items-center justify-between w-full md:w-auto'>
             <Link passHref className='shrink-0' href='/'>
-              <Image src={mbslogo} alt='logo' height={150} width={150} />
+              <Image
+                src={mbslogo}
+                alt='logo'
+                height={150}
+                width={150}
+                className='w-32 md:w-36'
+              />
             </Link>
             <div className='hidden text-sm space-x-5 lg:flex md:ml-10'>
               <Link
@@ -76,7 +82,7 @@ const HomeNavbar = () => {
               <Button
                 asChild
                 variant={'ghost'}
-                className='bg-[#262d4e] hover:bg-[#1c2344]'
+                className='bg-[#262d4e] rounded-sm hover:bg-[#1c2344]'
               >
                 <Link
                   href='https://app.mybitstore.com/auth'
@@ -87,7 +93,7 @@ const HomeNavbar = () => {
               </Button>
               <Button
                 asChild
-                className='bg-[#2684FC] w-fit hover:bg-[#1d6efb] transition-colors duration-150'
+                className='bg-[#2684FC] w-fit hover:bg-[#1d6efb] rounded-sm transition-colors duration-150'
               >
                 <Link
                   href='https://app.mybitstore.com/auth/register'
@@ -166,7 +172,7 @@ const HomeNavbar = () => {
             </Link>
             <Link
               className='flex gap-3 py-2 rounded-md text-base leading-6 text-white font-semibold'
-              href='/affiliate'
+              href='/referandearn'
             >
               <HeartHandshake size={24} />
               Refer & Earn

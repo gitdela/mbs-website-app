@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { Star } from 'lucide-react';
+import { IoMdStar, IoMdStarHalf, IoMdStarOutline } from 'react-icons/io';
 import Marquee from 'react-fast-marquee';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -122,11 +122,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs'>Jesus Sowah</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -147,11 +147,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs'>yAsMin dugBa</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStarHalf size={15} className='text-yellow-500' />
+                <IoMdStarOutline size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -172,11 +172,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs capitalize'>nana sarpong</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStarOutline size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -198,11 +198,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs'>Bodunde Oreofe</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -222,11 +222,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs'>Sal1234</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStarHalf size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -245,11 +245,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs'>Issah Abdul Hadi</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStarOutline size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -267,11 +267,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs'>Issah Abdul Hadi</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -289,11 +289,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs capitalize'>emmanuel tormekpey</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -311,11 +311,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs'>Daniel Nyarkoh</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>
@@ -333,11 +333,11 @@ const About = () => {
               />
               <p className='mb-0 text-xs'>Angela Owusu</p>
               <span className='flex'>
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
-                <Star size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
+                <IoMdStar size={15} className='text-yellow-500' />
               </span>
             </span>
             <p className='text-white text-xs'>

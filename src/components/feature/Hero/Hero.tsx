@@ -16,7 +16,6 @@ import getitongoogleplay from '../../../../public/assets/getitongoogleplay.png';
 //   CarouselContent,
 //   CarouselItem,
 // } from '@/components/ui/carousel';
-// import Autoplay from 'embla-carousel-autoplay';
 import TrackingTextUI from '@/components/ui/trackingtextui';
 import CountUpUI from '@/components/ui/countupui';
 import heroGrid from '../../../../public/assets/xx.png';
@@ -26,13 +25,13 @@ const Hero = () => {
     <section className='w-full lg:px-24'>
       {/* <div className='bg-world bg-no-repeat bg-top w-full'> */}
 
-      <div className='w-full grid lg:grid-cols-2 gap-12 md:gap-24 pt-32 pb-12'>
+      <div className='w-full grid lg:grid-cols-2 gap-12 md:gap-24 pt-24 md:pt-32 pb-12'>
         <div className='flex flex-col space-y-8 justify-center lg:items-start items-center'>
           <TrackingTextUI />
           <div className='w-full grid justify-center lg:justify-start gap-6 md:gap-8'>
-            <div className='w-full flex flex-wrap text-white gap-6 items-center  md:justify-start justify-center'>
-              <Button className='h-auto px-0' variant='link'>
-                <Link href={'/'} className='flex justify-center items-center'>
+            <div className='w-full flex flex-col text-white gap-6 max-md:items-center justify-center'>
+              <Button className='hidden md:block h-auto px-0' variant='link'>
+                <Link href={'/'} className='flex justify-start items-center'>
                   <Image
                     className='rounded'
                     src={qrImage}
@@ -42,9 +41,15 @@ const Hero = () => {
                   />
                 </Link>
               </Button>
-              <div className='flex flex-col items-center md:items-start'>
+              <div className='hidden md:flex flex-col items-center md:items-start'>
                 <p>Scan to download the app</p>
                 <p className='font-bold text-xl'>iOS and Android</p>
+              </div>
+              <div className='flex md:hidden flex-col items-center md:items-start'>
+                <p className='font-semibold text-xl mb-1'>
+                  Download the new app
+                </p>
+                <p className='text-sm'>iOS and Android</p>
               </div>
             </div>
             <div className='flex gap-4 lg:justify-start justify-center items-center'>

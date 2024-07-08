@@ -4,11 +4,14 @@ import HomeNavbar from '@/components/feature/Navbars/homenavbar';
 import Marque from '@/components/ui/marque';
 import Image from 'next/image';
 import heroworld from '../../../public/assets/world.svg';
-import RateSection from '@/components/feature/RateSection/ratesection';
 import CTA from '@/components/feature/CTA/CTA';
 import FeatureGrid from '@/components/feature/FeatureGrid/FeatureGrid';
+import { RateSection } from '@/components/feature/RateSection/ratesection';
+import { fetchCoins } from './actions';
 
-export default function Home() {
+export default async function Home() {
+  const data: any = await fetchCoins();
+
   return (
     <main>
       <div className='relative'>
@@ -23,16 +26,18 @@ export default function Home() {
           <HomeNavbar />
           <Hero />
         </Container>
-        <Marque />
+        <Marque announcements={data.info.announcements} />
         <Container>
-          <CTA />
+          <CTA banners={data.info.banners} />
         </Container>
       </div>
       <Container>
-        <RateSection />
+        <RateSection rates={data.info.rates} />
       </Container>
       <div className='bg-night-100'>
-        <FeatureGrid />
+        <Container>
+          <FeatureGrid />
+        </Container>
       </div>
     </main>
   );

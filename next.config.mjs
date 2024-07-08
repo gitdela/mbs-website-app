@@ -6,6 +6,7 @@ const nextConfig = {
       'mybitstores.com',
       'babebitstore.s3.us-west-2.amazonaws.com',
       'coin-images.coingecko.com',
+      'assets.coingecko.com',
     ],
   },
 };

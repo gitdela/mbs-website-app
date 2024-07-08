@@ -24,7 +24,13 @@ const OtherNavbar = () => {
 
             <div className='flex items-center justify-between w-full md:w-auto'>
               <Link passHref className='shrink-0' href='/'>
-                <Image src={mbslogo} alt='logo' height={150} width={150} />
+                <Image
+                  src={mbslogo}
+                  alt='logo'
+                  height={150}
+                  width={150}
+                  className='w-32 md:w-36'
+                />
               </Link>
               <div className='hidden text-sm space-x-5 lg:flex md:ml-10'>
                 <Link
@@ -137,6 +143,7 @@ const OtherNavbar = () => {
             <Link
               className='flex gap-3 py-3 rounded-md text-base leading-6 text-white font-semibold'
               href='/p2pads'
+              onClick={() => setShowMobileMenu(false)}
             >
               <Search size={24} className='font-bold' />
               P2P Ads
@@ -145,6 +152,7 @@ const OtherNavbar = () => {
             <Link
               className='flex gap-3 py-2 rounded-md text-base leading-6 text-white font-semibold'
               href='/bulktrade'
+              onClick={() => setShowMobileMenu(false)}
             >
               <Coins size={24} />
               OTC/Bulk Trade
@@ -152,6 +160,7 @@ const OtherNavbar = () => {
             <Link
               className='flex gap-3 py-2 rounded-md text-base leading-6 text-white font-semibold'
               href='/referandearn'
+              onClick={() => setShowMobileMenu(false)}
             >
               <HeartHandshake size={24} />
               Refer & Earn
@@ -159,6 +168,7 @@ const OtherNavbar = () => {
             <Link
               href='https://blog.mybitstore.com'
               className='flex gap-3 py-2 rounded-md text-base leading-6 text-white font-semibold'
+              onClick={() => setShowMobileMenu(false)}
             >
               <Rss size={24} />
               Blog
