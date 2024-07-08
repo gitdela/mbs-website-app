@@ -52,14 +52,14 @@ const FeatureGrid = () => {
   ];
   return (
     <div className='pb-12 md:py-12 md:pb-20'>
-      <div className='w-full text-center sm:px-6 lg:px-8'>
+      <div className='w-full text-center px-2 lg:px-8'>
         <h3 className='py-14 text-center text-white font-bold text-lg tracking-tight md:text-4xl'>
           Why you should choose Mybitstore for cryptocurrency trading
         </h3>
         <div className='grid grid-cols-featureGridXS md:grid-cols-featureGridMD gap-x-8 gap-y-4'>
           {data.map(({ Icon, title, desc, link }, index) => (
-            <div className='py-6 px-2 bg-night-50 rounded' key={index}>
-              <div className='flex flex-col items-start px-4'>
+            <div className='py-6 bg-night-50 rounded' key={index}>
+              <div className='flex flex-col items-start px-3'>
                 <div className='flex items-center juscetify-start gap-2'>
                   <Image
                     src={Icon}

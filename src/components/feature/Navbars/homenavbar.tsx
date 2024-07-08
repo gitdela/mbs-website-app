@@ -29,7 +29,7 @@ const HomeNavbar = () => {
     <nav
       className={
         color
-          ? 'fixed w-full top-0 left-0 z-30 bg-night-50 transition-all ease-in duration-200'
+          ? 'fixed w-full top-0 left-0 z-30 bg-night-100 transition-all ease-in duration-200'
           : 'fixed w-full top-0 left-0 z-30 transition-all ease-in duration-150'
       }
       aria-label='Global'

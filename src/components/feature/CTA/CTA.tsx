@@ -45,6 +45,7 @@ const CTA = ({ banners }: any) => {
                   alt={`mybitstore-flyer-${index}`}
                   width={600}
                   height={200}
+                  priority
                   className='rounded-md'
                 />
               </CarouselItem>

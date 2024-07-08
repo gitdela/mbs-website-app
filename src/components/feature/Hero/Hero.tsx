@@ -38,6 +38,7 @@ const Hero = () => {
                     alt='qr code'
                     width={120}
                     height={120}
+                    priority
                   />
                 </Link>
               </Button>
