@@ -120,7 +120,7 @@ const HomeNavbar = () => {
       {/* mobile nav */}
 
       {showMobileMenu && (
-        <div className='absolute left-0 top-0 px-4 py-6 h-screen w-full lg:hidden md:container mx-auto bg-[#242b51] z-20'>
+        <div className='absolute left-0 top-0 px-4 py-6 h-screen w-full lg:hidden md:container mx-auto bg-night-100 z-20'>
           <div className='flex items-center justify-between mb-4'>
             <Image
               priority
