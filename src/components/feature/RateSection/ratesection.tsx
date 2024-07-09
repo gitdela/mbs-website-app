@@ -82,7 +82,7 @@ export function RateSection({ rates }: Props) {
                     </td>
                     <td className='px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-base text-right text-white'>
                       <div className='flex flex-col justify-center'>
-                        <span className='text-sm font-semibold'>
+                        <span className='text-sm font-medium'>
                           $
                           {Number(value.current_price).toLocaleString(
                             undefined,
