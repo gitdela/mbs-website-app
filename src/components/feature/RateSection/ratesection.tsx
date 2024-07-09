@@ -88,6 +88,7 @@ export function RateSection({ rates }: Props) {
                             undefined,
                             {
                               minimumFractionDigits: 2,
+                              maximumFractionDigits: 2,
                             }
                           )}
                         </span>
@@ -95,6 +96,7 @@ export function RateSection({ rates }: Props) {
                           $
                           {Number(value.last_price).toLocaleString(undefined, {
                             minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
                           })}
                         </span>
                       </div>
@@ -103,6 +105,7 @@ export function RateSection({ rates }: Props) {
                       $
                       {Number(value.last_price).toLocaleString(undefined, {
                         minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
                       })}
                     </td>
                     <td className='px-2 ps-8 md:px-6 whitespace-nowrap text-right text-white'>
@@ -112,6 +115,7 @@ export function RateSection({ rates }: Props) {
                           {Number(
                             value.price_change_percentage_24h
                           ).toLocaleString(undefined, {
+                            minimumFractionDigits: 2,
                             maximumFractionDigits: 2,
                           })}
                           %
