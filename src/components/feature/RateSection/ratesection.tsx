@@ -16,7 +16,7 @@ export function RateSection({ rates }: Props) {
 
         <div className='w-full'>
           <table className='w-full md:w-[80%] mx-auto mb-6'>
-            <caption className='caption-top py-4 mx-auto text-center text-sm text-muted-foreground'>
+            <caption className='caption-top py-4 mx-auto text-center text-sm mb-2 text-muted-foreground'>
               This page displays the latest prices, 24-hour trading volume,
               price changes, and market capitalizations for all cryptocurrencies
               on Mybitstore.
@@ -72,17 +72,17 @@ export function RateSection({ rates }: Props) {
                         className='w-6 h-6 md:w-8 md:h-8'
                       />
                       <div className='flex flex-col items-start'>
-                        <span className='text-xs md:text-base font-medium capitalize'>
+                        <span className='text-xs md:text-base font-semibold capitalize'>
                           {value.label}
                         </span>
-                        <span className='uppercase text-xs md:text-base font-normal text-muted-foreground'>
+                        <span className='uppercase text-xs md:text-base font-medium text-muted-foreground'>
                           {value.ticker}
                         </span>
                       </div>
                     </td>
                     <td className='px-2 md:px-6 py-4 whitespace-nowrap text-xs md:text-base text-right text-white'>
                       <div className='flex flex-col justify-center'>
-                        <span className='text-sm'>
+                        <span className='text-sm font-semibold'>
                           $
                           {Number(value.current_price).toLocaleString(
                             undefined,
@@ -91,7 +91,7 @@ export function RateSection({ rates }: Props) {
                             }
                           )}
                         </span>
-                        <span className='text-xs text-muted-foreground md:hidden'>
+                        <span className='text-xs font-medium text-muted-foreground md:hidden'>
                           $
                           {Number(value.last_price).toLocaleString(undefined, {
                             minimumFractionDigits: 2,
@@ -107,7 +107,7 @@ export function RateSection({ rates }: Props) {
                     </td>
                     <td className='px-2 ps-8 md:px-6 whitespace-nowrap text-right text-white'>
                       {Number(value.price_change_percentage_24h) > 0 ? (
-                        <div className='bg-[#2caf88] max-md:w-20 w-20 py-4 md:px-4 text-xs ms-auto rounded text-center font-semibold'>
+                        <div className='bg-[#2caf88] max-md:w-20 w-20 py-3 md:px-4 text-sm ms-auto rounded text-center font-semibold'>
                           +
                           {Number(
                             value.price_change_percentage_24h
@@ -117,7 +117,7 @@ export function RateSection({ rates }: Props) {
                           %
                         </div>
                       ) : (
-                        <div className='bg-red-500 max-md:w-20 w-20 py-4 md:px-4 rounded text-xs ms-auto text-center font-semibold'>
+                        <div className='bg-red-500 max-md:w-20 w-20 py-3 md:px-4 rounded text-sm ms-auto text-center font-semibold'>
                           {Number(
                             value.price_change_percentage_24h
                           ).toLocaleString(undefined, {
