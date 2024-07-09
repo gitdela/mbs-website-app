@@ -10,17 +10,17 @@ export function RateSection({ rates }: Props) {
   return (
     <div className='pt-12 max-w-6xl mx-auto'>
       <div className='w-full'>
-        <p className='mt-2 text-center text-lg md:text-2xl font-semibold text-white'>
+        <p className='mt-2 text-center text-lg md:text-2xl mb-4 font-semibold text-white'>
           Todays Cryptocurrency Prices By Market Cap
         </p>
 
         <div className='w-full'>
           <table className='w-full md:w-[80%] mx-auto mb-6'>
-            {/* <caption className='caption-top py-4 mx-auto text-center text-sm mb-2 text-muted-foreground'>
+            <caption className='caption-top py-4 mx-auto text-center text-sm mb-2 text-muted-foreground'>
               This page displays the latest prices, 24-hour trading volume,
               price changes, and market capitalizations for all cryptocurrencies
               on Mybitstore.
-            </caption> */}
+            </caption>
 
             <thead className='bg-night-50 font-semibold'>
               <tr className=''>
