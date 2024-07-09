@@ -154,7 +154,7 @@ const HomeNavbar = () => {
             </Button>
           </div>
 
-          <div className='flex flex-col space-y-8'>
+          <div className='flex flex-col gap-5'>
             <Link
               className='flex gap-3 py-3 rounded-md text-base leading-6 text-white font-semibold'
               href='/p2pads'

@@ -8,9 +8,9 @@ const Marque = ({ announcements }: any) => {
   });
 
   return (
-    <div className='w-full px-4 py-3 md:py-0 mt-20 md:h-[50px] flex justify-center items-center gap-1 md:gap-5 bg-gradient-to-r from-transparent via-[#2D5992] to-[#2684FC] text-white'>
+    <div className='w-full px-4 py-3 md:py-0 mt-10 md:mt-20 h-[40px] md:h-[50px] flex justify-center items-center gap-1 md:gap-5 bg-gradient-to-r from-transparent via-[#2D5992] to-[#2684FC] text-white'>
       <Volume2 size={20} />
-      <Marquee pauseOnHover={true} style={{ width: '100%' }}>
+      <Marquee speed={20} pauseOnHover={true} style={{ width: '100%' }}>
         {editedAnnouncements.map((item: string, index: number) => (
           <p key={index} className='mb-0 text-xs md:text-lg'>
             {item}

@@ -276,7 +276,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='mt-12 border-t border-gray-500 py-8'>
-            <p className='text-sm text-gray-400 xl:text-center'>
+            <p className='text-sm text-gray-400 text-center'>
               &copy; {new Date().getFullYear()} Mybitstore Technologies Limited.
               All rights reserved.
             </p>

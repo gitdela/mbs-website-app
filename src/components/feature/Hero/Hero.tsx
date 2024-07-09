@@ -50,10 +50,10 @@ const Hero = () => {
                 <p className='font-semibold text-xl mb-1'>
                   Download the new app
                 </p>
-                <p className='text-sm'>iOS and Android</p>
+                <p className='text-sm'>on iOS and Android</p>
               </div>
             </div>
-            <div className='flex gap-4 lg:justify-start justify-center items-center'>
+            <div className='flex flex-row-reverse gap-4 lg:justify-start justify-center items-center'>
               <Link
                 href={
                   'https://play.google.com/store/apps/details?id=app.mybitstore.com'

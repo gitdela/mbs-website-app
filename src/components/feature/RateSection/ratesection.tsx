@@ -62,7 +62,7 @@ export function RateSection({ rates }: Props) {
               {rates.length > 0 &&
                 rates.map((value: any, index: any) => (
                   <tr key={index} className='cursor-pointer'>
-                    <td className='px-2 md:px-6 py-5 whitespace-nowrap text-sm text-white flex w-fit items-center gap-1 md:gap-2'>
+                    <td className='px-2 md:px-6 py-5 whitespace-nowrap text-sm text-white flex w-fit items-center gap-1.5 md:gap-2'>
                       <Image
                         priority
                         src={value.image}
