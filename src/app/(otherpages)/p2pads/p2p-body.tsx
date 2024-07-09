@@ -16,6 +16,8 @@ import { Button } from '@/components/ui/button';
 import { useQuery } from '@tanstack/react-query';
 import Image from 'next/image';
 import Container from '@/components/Container';
+import Loader from '@/components/ui/loader';
+import EmptyAds from '@/components/ui/emptyads';
 
 const P2PBody = ({ data }: any) => {
   const router = useRouter();
@@ -45,7 +47,7 @@ const P2PBody = ({ data }: any) => {
     return data;
   };
 
-  const { data: p2pData } = useQuery({
+  const { data: p2pData, isLoading: p2pLoading } = useQuery({
     queryKey: ['p2p_ads', type, selectedCoin],
     queryFn: getP2pAds,
   });
@@ -198,6 +200,8 @@ const P2PBody = ({ data }: any) => {
             </div>
           </div>
           <div className='bg-night-50 w-full flex flex-col pb-8 px-3 md:px-6 rounded-md divide-y divide-gray-700'>
+            {p2pLoading && <Loader />}
+            {p2pData?.info.length === 0 && <EmptyAds />}
             {p2pData?.info.map((offer: any, index: number) => (
               <div
                 key={index}
