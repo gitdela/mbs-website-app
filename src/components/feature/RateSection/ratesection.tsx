@@ -107,7 +107,7 @@ export function RateSection({ rates }: Props) {
                     </td>
                     <td className='px-2 ps-8 md:px-6 whitespace-nowrap text-right text-white'>
                       {Number(value.price_change_percentage_24h) > 0 ? (
-                        <div className='bg-[#2caf88] max-md:w-20 w-20 py-2 md:px-4 text-xs ms-auto rounded text-center font-semibold'>
+                        <div className='bg-[#2caf88] max-md:w-20 w-20 py-2.5 md:px-4 text-xs ms-auto rounded text-center font-semibold'>
                           +
                           {Number(
                             value.price_change_percentage_24h
@@ -117,7 +117,7 @@ export function RateSection({ rates }: Props) {
                           %
                         </div>
                       ) : (
-                        <div className='bg-red-500 max-md:w-20 w-20 py-2 md:px-4 rounded text-xs ms-auto text-center font-semibold'>
+                        <div className='bg-red-500 max-md:w-20 w-20 py-2.5 md:px-4 rounded text-xs ms-auto text-center font-semibold'>
                           {Number(
                             value.price_change_percentage_24h
                           ).toLocaleString(undefined, {
