@@ -8,11 +8,7 @@ const TrackingTextUI = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        'trade cryptocurrencies',
-        'convert cryptocurrencies',
-        'trade with your peers',
-      ], // Strings to display
+      strings: ['trade crypto', 'convert crypto', 'trade with your peers'], // Strings to display
 
       startDelay: 500,
       typeSpeed: 30,
