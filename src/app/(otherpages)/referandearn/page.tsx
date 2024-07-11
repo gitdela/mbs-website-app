@@ -14,7 +14,7 @@ const ReferAndEarn = () => {
         <Heading
           title='Refer and Earn'
           description='Share Mybitstore to friends and family and earn commissions on their trades.'
-          src=''
+          src='/assets/reward.png'
           alt='refer and earn'
         />
         <Affiliate />

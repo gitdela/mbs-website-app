@@ -18,7 +18,7 @@ import getitongoogleplay from '../../../../public/assets/getitongoogleplay.png';
 // } from '@/components/ui/carousel';
 import TrackingTextUI from '@/components/ui/trackingtextui';
 import CountUpUI from '@/components/ui/countupui';
-import heroGrid from '../../../../public/assets/xx.png';
+import heroGrid from '../../../../public/assets/Scene.png';
 
 const Hero = () => {
   return (

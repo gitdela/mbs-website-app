@@ -199,7 +199,7 @@ const P2PBody = ({ data }: any) => {
               </div>
             </div>
           </div>
-          <div className='bg-night-50 w-full flex flex-col pb-8 px-3 md:px-6 rounded-md divide-y divide-gray-700'>
+          <div className='bg-night-50 w-full flex flex-col pb-4 px-3 md:px-6 rounded-md divide-y divide-gray-700'>
             {p2pLoading && <Loader />}
             {p2pData?.info.length === 0 && <EmptyAds />}
             {p2pData?.info.map((offer: any, index: number) => (
