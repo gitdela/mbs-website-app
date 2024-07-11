@@ -22,7 +22,7 @@ import _ from 'lodash';
 // } from '../ui/form';
 // import { Input } from '../shad/input';
 // import { Textarea } from '../ui/textarea';
-import { Lock } from 'lucide-react';
+import { CreditCard, Lock, MailQuestion, PersonStanding } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import mail from '../../../../public/assets/mail-contact.svg';
@@ -218,31 +218,31 @@ const Support = () => {
             </h1>
             <div className='grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-4'>
               <Link
-                href='/'
+                href='https://app.mybitstore.com/auth'
                 className='bg-[#212741] flex flex-col items-center justify-center gap-4 py-4 rounded-md'
               >
                 <Lock className='text-white w-8 h-8' />
                 <h3 className='md:text-xl text-white'>Reset Password</h3>
               </Link>
               <Link
-                href='/'
+                href='/https://app.mybitstore.com/auth'
                 className='bg-[#212741] flex flex-col items-center justify-center gap-4 py-4 rounded-md'
               >
-                <Lock className='text-white w-8 h-8' />
+                <CreditCard className='text-white w-8 h-8' />
                 <h3 className='md:text-xl text-white'>Account Verification</h3>
               </Link>
               <Link
-                href='/'
+                href='/https://app.mybitstore.com/auth'
                 className='bg-[#212741] flex flex-col items-center justify-center gap-4 py-4 rounded-md'
               >
-                <Lock className='text-white w-8 h-8' />
+                <PersonStanding className='text-white w-8 h-8' />
                 <h3 className='md:text-xl text-white'>Talk to an Agent</h3>
               </Link>
               <Link
-                href='/'
+                href='/faq'
                 className='bg-[#212741] flex flex-col items-center justify-center gap-4 py-4 rounded-md'
               >
-                <Lock className='text-white w-8 h-8' />
+                <MailQuestion className='text-white w-8 h-8' />
                 <h3 className='md:text-xl text-white'>FAQs</h3>
               </Link>
             </div>
