@@ -19,7 +19,7 @@ import Container from '@/components/Container';
 const FAQs = () => {
   const getFaqs = () => {
     const query = `
-        *[_type == "faq"][0...5]{
+        *[_type == "faq"]{
             title,
               body
           }
@@ -40,11 +40,15 @@ const FAQs = () => {
       <Container>
         <div className='py-10 w-full px-4 md:container lg:max-w-5xl xl:max-w-6xl mx-auto'>
           <div className='hidden md:block'>
-            <Heading title='FAQ' alt='faq' src='/assets/faq.svg' />
+            <Heading
+              title='Frequently Asked Questions'
+              alt='faq'
+              src='/assets/faq.svg'
+            />
           </div>
           <div className='block md:hidden'>
             <Heading
-              title='FAQ'
+              title='Frequently Asked Questions'
               alt='faq'
               src='/assets/faq.svg'
               imageHeight={50}
@@ -63,10 +67,10 @@ const FAQs = () => {
                   key={key}
                   className='border-2 border-[#212741] px-2 md:px-4 rounded-md'
                 >
-                  <AccordionTrigger className='text-white text-md font-bold text-start md:text-xl capitalize'>
+                  <AccordionTrigger className='text-white text-md font-bold text-start md:text-xl capitalize hover:no-underline'>
                     {faq?.title}
                   </AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionContent className='!text-white text-start'>
                     {/* {Array.isArray(faq?.body) ? (
                     <ul>
                       {faq.body.map((item: any, index: number) => (
@@ -91,13 +95,13 @@ const FAQs = () => {
                 </AccordionItem>
               ))}
             </Accordion>
-            <Image
+            {/* <Image
               src='/assets/faq-new.svg'
               alt='FAQs'
               width={50}
               height={50}
               className='rounded-full w-full md:w-1/2'
-            />
+            /> */}
           </div>
         </div>
       </Container>
