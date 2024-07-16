@@ -248,81 +248,67 @@ const Support = () => {
             </div>
           </section>
           <div className='bg-night-50 rounded-lg'>
-            <div className='w-full flex flex-col md:flex-row gap-8 text-white mt-16 px-6 py-8 pb-16'>
-              <div className='w-full'>
-                <h2 className='text-white text-2xl sm:text-3xl'>
+            <div className='w-full flex flex-col md:grid md:grid-cols-3 gap-x-12 gap-y-8 text-white mt-16 px-6 py-8 pb-16'>
+              <div className='w-full cols-span-1'>
+                <h2 className='text-2xl text-white font-semibold sm:text-2xl'>
+                  General Enquiry & Complaints
+                </h2>
+                <div className='mt-3'>
+                  <p className='text-muted-foreground'>
+                    Stay in touch with our customer service team to report all
+                    general issues and get instant response. Reach us on the
+                    email and phone contact provided.
+                  </p>
+                </div>
+              </div>
+              <div className='w-full cols-span-1'>
+                <h2 className='text-2xl text-white font-semibold sm:text-2xl'>
+                  Technical Support
+                </h2>
+                <div className='mt-3'>
+                  <p className='text-muted-foreground'>
+                    Stay in touch with our technical team to report all issues
+                    relating to our website and mobile apps.
+                  </p>
+                </div>
+              </div>
+              <div className='w-full col-span-1'>
+                <h2 className='text-white text-2xl font-semibold sm:text-2xl'>
                   Sales Support
                 </h2>
                 <div className='mt-3'>
-                  <p className=''>
+                  <p className='text-muted-foreground'>
                     Stay in touch with our sales and marketing team to discuss
                     all related activities and get instant response. Reach us on
                     the email and phone contact provided.
                   </p>
                 </div>
-                <div className='space-y-6'>
-                  <div className='flex gap-1'>
-                    <Image
-                      src={calls}
-                      alt='phone'
-                      height={25}
-                      width={25}
-                      className='flex justify-center items-start'
-                    />
-                    <span className='ml-3 mt-3'>
-                      <p className='my-0'> + (233) 24 978 4105</p>
-                      <p className='my-0'> + (233) 54 692 3048</p>
-                    </span>
-                  </div>
-                  <div className='flex gap-4'>
-                    <Image
-                      src={mail}
-                      alt='phone'
-                      height={25}
-                      width={25}
-                      className='flex justify-center items-start'
-                    />
-                    <p className='my-0'>marketing@mybitstore.com</p>
-                  </div>
-                </div>
               </div>
-              <div className='w-full'>
-                <h2 className='text-2xl text-white sm:text-3xl'>
-                  Technical Support
-                </h2>
-                <div className='mt-3'>
-                  <p>
-                    Stay in touch with our technical team to report all issues
-                    relating to our website, mobile apps and general issues and
-                    get instant response. Reach us on the email and phone
-                    contact provided.
-                  </p>
+
+              <div className='space-y-2'>
+                <div className='flex gap-1'>
+                  <Image
+                    src={calls}
+                    alt='phone'
+                    height={25}
+                    width={25}
+                    className='flex justify-center items-start'
+                  />
+                  <span className='ml-3'>
+                    <p className='my-0'> + (233) 24 978 4105</p>
+                  </span>
                 </div>
-                <div>
-                  <div className='space-y-6 mt-3'>
-                    <div className='flex gap-1'>
-                      <Image
-                        src={calls}
-                        alt='phone'
-                        height={25}
-                        width={25}
-                        className='flex justify-center items-start'
-                      />
-                      <span className='ml-3'>
-                        <p className='my-0'> + (233) 24 978 4105</p>
-                      </span>
-                    </div>
-                    <div className='flex gap-4'>
-                      <Image
-                        src={mail}
-                        alt='phone'
-                        height={25}
-                        width={25}
-                        className='flex justify-center items-start'
-                      />
-                      <p className='my-0'>support@mybitstore.com</p>
-                    </div>
-                    <div className='flex gap-4'>
+                <div className='flex gap-4'>
+                  <Image
+                    src={mail}
+                    alt='phone'
+                    height={25}
+                    width={25}
+                    className='flex justify-center items-start'
+                  />
+                  <p className='my-0'>support@mybitstore.com</p>
+                </div>
+                {/* <div className='flex gap-4'>
                       <Image
                         src={times}
                         alt='phone'
@@ -331,8 +317,67 @@ const Support = () => {
                         className='flex justify-center items-start'
                       />
                       <p className='mb-0'>Monday - Friday, 8:00 AM - 5:00 PM</p>
-                    </div>
-                  </div>
+                    </div> */}
+              </div>
+
+              <div className='space-y-2'>
+                <div className='flex gap-1'>
+                  <Image
+                    src={calls}
+                    alt='phone'
+                    height={25}
+                    width={25}
+                    className='flex justify-center items-start'
+                  />
+                  <span className='ml-3'>
+                    <p className='my-0'> + (233) 26 765 8481</p>
+                  </span>
+                </div>
+                <div className='flex gap-4'>
+                  <Image
+                    src={mail}
+                    alt='phone'
+                    height={25}
+                    width={25}
+                    className='flex justify-center items-start'
+                  />
+                  <p className='my-0'>admin@mybitstore.com</p>
+                </div>
+                {/* <div className='flex gap-4'>
+                      <Image
+                        src={times}
+                        alt='phone'
+                        height={25}
+                        width={25}
+                        className='flex justify-center items-start'
+                      />
+                      <p className='mb-0'>Monday - Friday, 8:00 AM - 5:00 PM</p>
+                    </div> */}
+              </div>
+
+              <div className='space-y-2'>
+                <div className='flex gap-1'>
+                  <Image
+                    src={calls}
+                    alt='phone'
+                    height={25}
+                    width={25}
+                    className='flex justify-center items-start'
+                  />
+                  <span className='ml-3'>
+                    <p className='my-0'> + (233) 24 978 4105</p>
+                    <p className='my-0'> + (233) 54 692 3048</p>
+                  </span>
+                </div>
+                <div className='flex gap-4'>
+                  <Image
+                    src={mail}
+                    alt='phone'
+                    height={25}
+                    width={25}
+                    className='flex justify-center items-start'
+                  />
+                  <p className='my-0'>marketing@mybitstore.com</p>
                 </div>
               </div>
             </div>

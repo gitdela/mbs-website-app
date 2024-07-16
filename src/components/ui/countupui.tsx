@@ -23,7 +23,7 @@ const CountUpUI = () => {
       </div>
       <div className='flex justify-center items-center'>
         <p className='text-xs sm:text-sm font-semibold text-center md:text-sm text-muted-foreground'>
-          Clients
+          Users
         </p>
       </div>
       <div className='flex justify-center items-center'>

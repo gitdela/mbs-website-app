@@ -68,19 +68,23 @@ export const myPortableTextComponents = {
   },
   block: {
     // Ex. 1: customizing common block types
-    h1: ({ children }: any) => <h1 className='text-2xl'>{children}</h1>,
-    h2: ({ children }: any) => <h2 className='text-3xl '>{children}</h2>,
-    h3: ({ children }: any) => <h3 className='text-4xl'>{children}</h3>,
-    h4: ({ children }: any) => <h4 className='text-5xl'>{children}</h4>,
-    h5: ({ children }: any) => <h5 className='text-6xl'>{children}</h5>,
+    h1: ({ children }: any) => <h1 className='my-1 text-2xl'>{children}</h1>,
+    h2: ({ children }: any) => <h2 className='my-1 text-xl'>{children}</h2>,
+    h3: ({ children }: any) => <h3 className='my-1 text-lg'>{children}</h3>,
+    h4: ({ children }: any) => <h4 className='my-1 text-md'>{children}</h4>,
+    h5: ({ children }: any) => <h5 className='my-1 text-sm'>{children}</h5>,
     blockquote: ({ children }: any) => <blockquote>{children}</blockquote>,
     normal: ({ children }: any) => (
-      <span className='text-gray-600'>{children}</span>
+      <span className='text-white text-md'>{children}</span>
     ),
   },
   list: {
     // Ex. 1: customizing common list types
-    bullet: ({ children }: any) => <ul className='mt-xl'>{children}</ul>,
-    number: ({ children }: any) => <ol className='mt-lg'>{children}</ol>,
+    bullet: ({ children }: any) => (
+      <ul className='mt-xl my-2 pl-4 list-disc'>{children}</ul>
+    ),
+    number: ({ children }: any) => (
+      <ol className='mt-lg my-2 pl-2'>{children}</ol>
+    ),
   },
 };

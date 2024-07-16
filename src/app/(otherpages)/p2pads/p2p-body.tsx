@@ -235,7 +235,7 @@ const P2PBody = ({ data }: any) => {
                   </div>
                 </div>
                 <div className='lg:flex justify-start items-center hidden'>
-                  <div className='text-white text-md'>
+                  <div className='text-white font-bold text-md'>
                     <span>{formatNumber(offer.unit_price)}</span>&nbsp;&nbsp;
                     <span>{offer.currency}</span>
                   </div>
@@ -254,16 +254,18 @@ const P2PBody = ({ data }: any) => {
                     </div>
                     <span className='text-xs md:text-base text-gray-500'>
                       Quantity:&nbsp;&nbsp;
-                      <span className='text-white'>
+                      <span className='text-white font-semibold'>
                         {formatNumber(offer.trading_amount)}
                       </span>
                       &nbsp;&nbsp;
-                      <span className='text-white'>{offer.currency}</span>
+                      <span className='text-white font-semibold'>
+                        {offer.currency}
+                      </span>
                     </span>
                     <span className='text-xs md:text-base flex flex-col gap-1'>
                       <span className='text-gray-500'>
                         Limits:&nbsp;&nbsp;
-                        <span className='text-white'>
+                        <span className='text-white font-semibold'>
                           {formatNumber(offer.min_order_price)}&nbsp;&nbsp;
                           -&nbsp;&nbsp;
                           {formatNumber(offer.max_order_price)}
