@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <Script src='//fw-cdn.com/11700795/4340156.js' />
+      {/* <Script src='//fw-cdn.com/11700795/4340156.js' /> */}
       <body className={`${inter.className} bg-night-100`}>
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>

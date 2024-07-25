@@ -3,6 +3,8 @@
 // import './globals.css';
 // import Footer from '@/components/feature/Footer/footer';
 // import ReactQueryProvider from '@/lib/providers';
+import Footer from '@/components/feature/Footer/footer';
+import OtherNavbar from '@/components/feature/Navbars/othernavbar';
 import Script from 'next/script';
 
 // const inter = Inter({ subsets: ['latin'] });
@@ -29,7 +31,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <Script src='//fw-cdn.com/11700795/4340156.js' />
-      <body className={`bg-night-100`}>{children}</body>
+      <body className={`bg-night-100`}>
+        <OtherNavbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

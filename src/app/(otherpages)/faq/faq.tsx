@@ -110,7 +110,7 @@ const FAQs = () => {
                   key={key}
                   className='border-2 border-[#212741] px-2 md:px-4 rounded-md'
                 >
-                  <AccordionTrigger className='text-white text-md text-start md:text-xl capitalize hover:no-underline'>
+                  <AccordionTrigger className='text-white text-md text-start md:text-md capitalize hover:no-underline'>
                     {faq?.title}
                   </AccordionTrigger>
                   <AccordionContent className='!text-white text-start'>
