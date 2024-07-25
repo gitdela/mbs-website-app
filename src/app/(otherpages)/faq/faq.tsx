@@ -57,25 +57,25 @@ const FAQs = () => {
   //     queryKey: ['get_faq_wallet'],
   //   });
 
-  const getFaqsP2P = () => {
-    const query = `
-         *[_type == "faq_type" && title == "P2P"][0]{
-      "faqs": *[_type=="faq" && references(^._id )]{
-      title,
-      body
-  }
-    }
-          `;
+  // const getFaqsP2P = () => {
+  //   const query = `
+  //        *[_type == "faq_type" && title == "P2P"][0]{
+  //     "faqs": *[_type=="faq" && references(^._id )]{
+  //     title,
+  //     body
+  // }
+  //   }
+  //         `;
 
-    return client.fetch(query);
-  };
+  //   return client.fetch(query);
+  // };
 
-  const { data: P2PfaqsData } = useQuery({
-    queryFn: getFaqsP2P,
-    queryKey: ['get_faq_p2p'],
-  });
+  // const { data: P2PfaqsData } = useQuery({
+  //   queryFn: getFaqsP2P,
+  //   queryKey: ['get_faq_p2p'],
+  // });
 
-  console.log('sanity p2p faqs', getFaqsP2P);
+  // console.log('sanity p2p faqs', getFaqsP2P);
   //   console.log('sanity wallet faqs', getFaqsWallet);
 
   return (
@@ -104,13 +104,13 @@ const FAQs = () => {
               collapsible
               className='w-full text-white space-y-2'
             >
-              {P2PfaqsData?.faqs.map((faq: any, key: number) => (
+              {faqsData?.map((faq: any, key: number) => (
                 <AccordionItem
                   value={`item-${key}`}
                   key={key}
                   className='border-2 border-[#212741] px-2 md:px-4 rounded-md'
                 >
-                  <AccordionTrigger className='text-white text-md font-bold text-start md:text-xl capitalize hover:no-underline'>
+                  <AccordionTrigger className='text-white text-md text-start md:text-xl capitalize hover:no-underline'>
                     {faq?.title}
                   </AccordionTrigger>
                   <AccordionContent className='!text-white text-start'>

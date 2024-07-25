@@ -80,7 +80,7 @@ const FeesAndRates = () => {
               <tbody>
                 <tr className='border-b border-[#212741]'>
                   <td className='px-6 py-4 capitalize text-xs md:text-sm text-white'>
-                    Cryptos
+                    Cryptos (B2C)
                   </td>
                   <td
                     data-cell='Transaction Type'
@@ -88,11 +88,12 @@ const FeesAndRates = () => {
                   >
                     Buying
                   </td>
+
                   <td
                     data-cell='Fees'
                     className='capitalize px-2 py-4 text-right text-xs md:text-sm text-white justify-between'
                   >
-                    2%
+                    processor fees (if any) + 2%
                   </td>
                 </tr>
                 <tr className='border-b border-[#212741]'>
@@ -107,7 +108,7 @@ const FeesAndRates = () => {
                     data-cell='Fees'
                     className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
-                    2%
+                    processor fees (if any) + 2%
                   </td>
                 </tr>
                 <tr className='border-b border-[#212741]'>
@@ -131,7 +132,7 @@ const FeesAndRates = () => {
                     data-cell='Transaction Type'
                     className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
                   >
-                    Withdrawal (External)
+                    Withdrawal (External) - BTC
                   </td>
                   <td
                     data-cell='Fees'
@@ -170,7 +171,116 @@ const FeesAndRates = () => {
                     Network Fees + $2.00
                   </td>
                 </tr>
+                <tr className='border-b border-[#212741] first:bg-gray-100'>
+                  <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
+                  <td
+                    data-cell='Transaction Type'
+                    className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                  >
+                    Withdrawal (Internal) - USDT
+                  </td>
+                  <td
+                    data-cell='Fees'
+                    className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                  >
+                    $2.00
+                  </td>
+                </tr>
               </tbody>
+              <tr className='border-b border-[#212741] first:bg-gray-100'>
+                <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'>
+                  Bitcoin (P2P)
+                </td>
+                <td
+                  data-cell='Transaction Type'
+                  className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  Buying (Maker/Taker)
+                </td>
+                <td
+                  data-cell='Fees'
+                  className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  3%
+                </td>
+              </tr>
+              <tr className='border-b border-[#212741] first:bg-gray-100'>
+                <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
+                <td
+                  data-cell='Transaction Type'
+                  className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  Selling (Maker/Taker)
+                </td>
+                <td
+                  data-cell='Fees'
+                  className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  3%
+                </td>
+              </tr>
+              <tr className='border-b border-[#212741] first:bg-gray-100'>
+                <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'>
+                  USDT (P2P)
+                </td>
+                <td
+                  data-cell='Transaction Type'
+                  className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  Buying (Taker)
+                </td>
+                <td
+                  data-cell='Fees'
+                  className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  3%
+                </td>
+              </tr>
+              <tr className='border-b border-[#212741] first:bg-gray-100'>
+                <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
+                <td
+                  data-cell='Transaction Type'
+                  className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  Buying (Maker)
+                </td>
+                <td
+                  data-cell='Fees'
+                  className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  Network Fee + 3%
+                </td>
+              </tr>
+              <tr className='border-b border-[#212741] first:bg-gray-100'>
+                <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
+                <td
+                  data-cell='Transaction Type'
+                  className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  Selling (Maker)
+                </td>
+                <td
+                  data-cell='Fees'
+                  className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  Network Fee + 3%
+                </td>
+              </tr>
+              <tr className='border-b border-[#212741] first:bg-gray-100'>
+                <td className='px-2 py-4 capitalize text-xs md:text-sm text-white font-medium'></td>
+                <td
+                  data-cell='Transaction Type'
+                  className='text-left capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  Selling (Taker)
+                </td>
+                <td
+                  data-cell='Fees'
+                  className='text-right capitalize px-2 py-4 text-xs md:text-sm text-white justify-between'
+                >
+                  3%
+                </td>
+              </tr>
             </table>
             {/* <table className='min-w-full divide-y border mb-6 divide-gray-200'>
             <thead className='bg-[#1D1D31]'>

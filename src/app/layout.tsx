@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/feature/Footer/footer';
 import ReactQueryProvider from '@/lib/providers';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,11 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <Script src='//fw-cdn.com/11700795/4340156.js' />
       <body className={`${inter.className} bg-night-100`}>
-        <ReactQueryProvider>
-          {children}
-          <Footer />
-        </ReactQueryProvider>
+        <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
   );

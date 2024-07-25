@@ -11,7 +11,6 @@ export default function Layout({
   return (
     <ReactQueryProvider>
       <div className={` bg-night-100`}>
-        <OtherNavbar />
         {children}
         <Footer />
       </div>

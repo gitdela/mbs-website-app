@@ -153,7 +153,7 @@ const Footer = () => {
                       className='text-sm text-white font-light hover:text-gray-500  '
                       href='/referandearn'
                     >
-                      Become A Referer
+                      Become A Referrer
                     </Link>
                   </li>
                 </ul>
